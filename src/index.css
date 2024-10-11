@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bangers-regular {
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: linear-gradient(180deg, #FFF280 0%, #7EFF5E 100%);
+}
+
+.text-3d {
+  background: var(--primary-color);  /* Gradient applied as foreground */
+  -webkit-background-clip: text;     /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  background-clip: text;             /* For non-WebKit browsers */
+  color: transparent;                /* Ensure the text is transparent */
+  
+  /* Multiple layers of text shadow to create a 3D effect */
+  text-shadow: 
+    0 5px 0 rgba(0, 0, 0, 1),        /* Sharp black shadow immediately behind */
+    0 10px 10px rgba(0, 0, 0, 0.2),  /* Soft shadow further down */
+    0 10px 20px rgba(0, 0, 0, 0.2),  /* Slightly softer shadow */
+    0 10px 30px rgba(0, 0, 0, 0.2),  /* Softer and more diffused shadow */
+    0 10px 40px rgba(0, 0, 0, 0.2);  /* Most diffused and furthest shadow */
+}
+
+
+
+/* ::-webkit-scrollbar{
+  display: none;
+} */
+
+
+/* AlabayGuardian.css */
+
+.content {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #A4A8FF #1f2937; /* Thumb color and track color */
+}
+
+.content::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.content::-webkit-scrollbar-track {
+  background: #D9D9D957; /* Track color */
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #A4A8FF; /* Thumb color */
+ border-radius: 10px;  /*  Roundness of the thumb */
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* Optional: Thumb hover effect */
+.content::-webkit-scrollbar-thumb:hover {
+  background-color: #7f8c8d; /* Darker thumb on hover */
+}
+
+/* Alabay Heritage */
+.content1 {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #90FFAE #1f2937; /* Thumb color and track color */
+}
+
+.content1::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.content1::-webkit-scrollbar-track {
+  background: #D9D9D957; /* Track color */
+}
+
+.content1::-webkit-scrollbar-thumb {
+  background-color: #90FFAE; /* Thumb color */
+ border-radius: 10px;  /*  Roundness of the thumb */
+}
+
+/* For the whole scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* For the track (the empty area where the thumb slides) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* For the draggable part (the thumb) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  min-height: 30px; /* Minimum height of the thumb */
+}
+
+/* For hover effect (optional) */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovering over the thumb */
+}
+
+
