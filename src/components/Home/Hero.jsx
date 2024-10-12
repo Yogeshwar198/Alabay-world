@@ -6,7 +6,7 @@ const Hero = () => {
     <div>
       
         <img className='w-full sm:w-[100vw] md:h-screen object-cover sm:h-[50vh]' src={welcome} alt="" />
-        <h1 className='bangers-regular absolute top-7 lg:text-8xl xl:text-9xl md:text-6xl sm:text-5xl text-3xl sm:left-40 left-10 lg:left-8 bg-primary-gradient bg-clip-text text-transparent text-3d'>
+        <h1 className='bangers-regular absolute top-7 lg:text-8xl xl:text-9xl md:text-6xl sm:text-5xl text-3xl sm:left-40 left-14 lg:left-8 bg-primary-gradient bg-clip-text text-transparent text-3d'>
           WELCOME to alabay world</h1>
       
       <div className='absolute h-40 bg-black md:bottom-10 p-4 w-full'>

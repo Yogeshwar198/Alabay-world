@@ -48,7 +48,7 @@ const Merchandise = () => {
                     <img
                         className='absolute -top-4 sm:-top-12 max-w-[80vw] mx-auto'
                         src={overlayImages[currentIndex]} alt="" />
-                    <p className='absolute md:top-32 top-8 right-2 sm:top-24 sm:right-10 md:right-22 xl:top-40 xl:right-48 text-[10px] md:text-[20px] font-bold'>Coming Soon...</p>
+                    <p className='absolute md:top-32 top-8 right-6 sm:top-24 sm:right-10 md:right-22 xl:top-40 xl:right-48 text-[10px] md:text-[20px] font-bold'>Coming Soon...</p>
 
                     {/* Left arrow */}
                     <svg
@@ -63,7 +63,7 @@ const Merchandise = () => {
                     {/* Right arrow */}
                     <svg
                         onClick={handleNext}
-                        className='absolute top-20 sm:top-40 md:top-60 lg:top-70 xl:top-80 right-5 md:right-20 h-8 md:h-12 rounded-full p-1 bg-white cursor-pointer'
+                        className='absolute top-20 sm:top-40 md:top-60 lg:top-70 xl:top-80 right-10 md:right-20 h-8 md:h-12 rounded-full p-1 bg-white cursor-pointer'
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 -960 960 960"
                         fill="#5f6368">

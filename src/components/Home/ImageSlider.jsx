@@ -3,12 +3,13 @@ import React, { useState } from 'react';
 // Placeholder items (replace with actual image/video paths)
 const items = [
   { id: 1, type: 'photo', text: 'PHOTO 1', src: 'path_to_image_1' },
-  { id: 2, type: 'photo', text: 'PHOTO 2', src: 'path_to_image_2' },
-  { id: 3, type: 'photo', text: 'PHOTO 3', src: 'path_to_image_3' },
-  { id: 4, type: 'video', text: 'VIDEO 1', src: 'path_to_video_1' },
-  { id: 5, type: 'photo', text: 'PHOTO 4', src: 'path_to_image_4' },
-  { id: 6, type: 'video', text: 'VIDEO 2', src: 'path_to_video_2' },
-  { id: 7, type: 'video', text: 'VIDEO 3', src: 'path_to_video_3' },
+  { id: 2, type: 'video', text: 'VIDEO 1', src: 'path_to_video_1' }, 
+  { id: 3, type: 'photo', text: 'PHOTO 2', src: 'path_to_image_2' },
+  { id: 4, type: 'video', text: 'VIDEO 2', src: 'path_to_video_2' },
+  { id: 5, type: 'photo', text: 'PHOTO 3', src: 'path_to_image_3' },
+  { id: 6, type: 'video', text: 'VIDEO 3', src: 'path_to_video_3' },
+  { id: 7, type: 'photo', text: 'PHOTO 4', src: 'path_to_image_4' },
+  { id: 8, type: 'video', text: 'VIDEO 4', src: 'path_to_image_4' },
 ];
 
 const ImageSlider = () => {
@@ -53,19 +54,19 @@ const ImageSlider = () => {
       {/* Navigation for All, Photos, and Videos */}
       <div className='flex justify-center gap-6'>
         <h2
-          className={`text-center text-[15px] md:text-xl font-bold my-8 cursor-pointer ${selectedTab === 'all' ? 'text-blue-500' : ''}`}
+          className={`text-center text-[15px] md:text-xl font-bold my-8 cursor-pointer ${selectedTab === 'all' ? 'text-[#FFA800]' : ''}`}
           onClick={() => { setSelectedTab('all'); setCurrentIndex(0); }}
         >
           ALL
         </h2>
         <h2
-          className={`text-center text-[15px] md:text-xl font-bold my-8 cursor-pointer ${selectedTab === 'photos' ? 'text-blue-500' : ''}`}
+          className={`text-center text-[15px] md:text-xl font-bold my-8 cursor-pointer ${selectedTab === 'photos' ? 'text-[#FFA800]' : ''}`}
           onClick={() => { setSelectedTab('photos'); setCurrentIndex(0); }}
         >
           PHOTOS
         </h2>
         <h2
-          className={`text-center text-[15px] md:text-xl font-bold my-8 cursor-pointer ${selectedTab === 'videos' ? 'text-blue-500' : ''}`}
+          className={`text-center text-[15px] md:text-xl font-bold my-8 cursor-pointer ${selectedTab === 'videos' ? 'text-[#FFA800]' : ''}`}
           onClick={() => { setSelectedTab('videos'); setCurrentIndex(0); }}
         >
           VIDEOS
